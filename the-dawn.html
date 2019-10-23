@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>- THE DAWN -</title>
+        <style>
+        body {
+            background: url("dawn.jpg") fixed center no-repeat;
+            background-size: 100%;
+            text-align: center;
+        }
+
+        .thedawn {
+            font-family: 'Josefin Sans', sans-serif;
+            color: red;
+        }
+
+        .thedawn h2 {
+            font-size: 58px;
+        }
+
+        .gateworks {
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.35);
+            padding: 50px;
+            margin: 20px;
+            font-family: 'Press Start 2P', cursive;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(35, 31, 32);
+        }
+
+        .gateworks h3 {
+            font-size: 50px;
+        }
+
+        .gateworks h5 {
+            font-size: 25px;
+        }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./secret-base/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="thedawn">
+            <h2>- T H E  D A W N   C H A P T E R   2 -</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="gateworks">
+            <h5>Days:Hours:Minutes:Seconds</h5>
+            <h3 id="timer"></h3>
+        </div>
+        <script>
+        var countDowns = new Date("Sep 28, 2020 00:00:00").getTime();
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var disc = countDowns - now;
+
+            var days = Math.floor(disc / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((disc % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((disc % (1000 * 60 * 60)) / (1000 * 60));
+            var secs = Math.floor ((disc % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes + ":" + secs ;
+
+            if (disc < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY, ENDER LAIN!!"
+            }
+        })
+        </script>
+    </body>
+</html>

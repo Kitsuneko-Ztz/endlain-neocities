@@ -1,0 +1,16 @@
+body {
+    background-color: #3aa85f;
+    text-align: center; 
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 63px
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    font-size: 15px
+}

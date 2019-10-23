@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Game Stuff</title>
+        <style>
+        
+        .aktif {
+            background-color: rgb(35, 31, 32);
+        }
+
+        .hovzoom {
+            padding: 50px;
+            background-color: transparent;
+            transition: transform .2s;
+            float: left;
+        }
+
+        .hovzoom:hover {
+            transform: scale(1.2);
+            -ms-transform: scale(1.2);
+        }
+
+        .parag {
+            font-family: 'Ubuntu Mono', monospace;
+            color: rgb(35, 31, 32);
+            font-size: 16px;
+            padding: 20px;
+            background-color: slategrey
+        }
+        </style>
+        <link rel="stylesheet" href="gss2.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu:700i&display=swap">
+        <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="titles">
+            <h1>Game Stuff</h1>
+        </div>
+        <br>
+        <br>
+       <div class="navbar">
+                <a href="./mcbedrock-worlds.html" class="aktif">Minecraft Bedrock Worlds</a>
+                <a href="">Microsoft Solitaire Custom Theme</a>
+                <a href="jigsaw-custom.html">Microsoft Jigsaw Custom Puzzle</a>
+              <div class="dropdown">
+                      <button class="dropbon">osu!</button>
+                        <div class="dropdown-conte">
+                            <a href="">osu!maps</a>
+                            <a href="">osu!skins</a>
+                      </div>
+              </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="hovzoom">
+            <a href="./bedrock-world/skadi-peace.htm"><img src="./bedrock-world/SKADI-PEACE.jpg" alt="SKADI-PEACE"></a>
+        </div>
+        <div class="hovzoom">
+            <a href="./bedrock-world/lains-launch.htm"><img src="./bedrock-world/Lains-Launch.jpg" alt="Lains Launch"></a>
+        </div>
+    </body>
+</html>

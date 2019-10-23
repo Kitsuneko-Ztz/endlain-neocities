@@ -1,0 +1,14 @@
+body {
+    background-color: #003333;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 63px;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+}

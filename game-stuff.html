@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Game Stuff</title>
+        <style>
+        body {
+            background-color: lightslategrey;
+            text-align: center;
+        }
+
+        .titles {
+            text-align: left;
+            margin-left: 65px
+        }
+
+        .titles h1 {
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            font-size: 50px
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: darkslategrey;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 20px;
+            font-family: 'Ubuntu Mono', monospace;
+            text-align: center;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbon {
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            background-color: darkslategrey;
+            font-family: 'Ubuntu Mono', monospace;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbon {
+            background-color: slategrey;
+        }
+
+        .dropdown-conte {
+            display: none;
+            position: absolute;
+            background-color: darkslategrey;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-conte a {
+            float: none;
+            color: white;
+            font-family: 'Ubuntu Mono', monospace;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left
+        }
+
+        .dropdown-conte a:hover {
+            background-color: slategrey;
+        }
+
+        .dropdown:hover .dropdown-conte {
+            display: block;
+        }
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu:700i&display=swap">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="titles">
+            <h1>Game Stuff</h1>
+        </div>
+        <br>
+        <br>
+        <div class="navbar">
+            <a href="./game-stuff/mcbedrock-worlds.html">Minecraft Bedrock Worlds</a>
+            <a href="">Microsoft Solitaire Custom Theme</a>
+            <a href="./game-stuff/jigsaw-custom.html">Microsoft Jigsaw Custom Puzzle</a>
+            <div class="dropdown">
+                <button class="dropbon">osu!</button>
+                    <div class="dropdown-conte">
+                        <a href="">osu!maps</a>
+                        <a href="">osu!skins</a>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
