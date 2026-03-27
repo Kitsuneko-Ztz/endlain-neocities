@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.75">
+        <title>Unlisted and Lost Footage</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: gray;
+                text-align: center;
+            }
+
+            h1 {
+                font-family: 'Aboreto', cursive;
+                font-size: 64px;
+                color: white;
+            }
+
+            .container {
+                position: relative;
+                width: 50%;
+                max-width: 300px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border: 3px solid rgba(0, 0, 0, 0.459);
+                border-radius: 6px;
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, .5);
+                color: #f1f1f1;
+                width: 100%;
+                transition: .5s ease;
+                opacity: 0;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .container:hover  .overlay {
+                opacity: 1;
+            }
+        </style>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans:ital,wght@1,500&display=swap">
+    </head>
+    <body>
+        <br>
+        <br>
+        <h1>Unlisted/Lost Footage</h1>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <a href = "https://www.youtube.com/playlist?list=PLibSwOc44LREZgb0gapChm4e1Q2Qs2mpQ"><img src="./hidden-image/cc8.jpg" alt="CC8" class="img"></a>
+            <div class="overlay">Contingency Contract 8: Operation Dawnseeker Daily Site</div>
+        </div>
+    </body>
+</html>
